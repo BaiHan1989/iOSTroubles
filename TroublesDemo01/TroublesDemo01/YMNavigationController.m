@@ -18,14 +18,28 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if (self.childViewControllers.count > 0) {
+        
+        viewController.hidesBottomBarWhenPushed = YES;
+        // 解决push多个控制器后，popToRootViewController TabBar消失
+        if (self.childViewControllers.count > 1) {
+            viewController.hidesBottomBarWhenPushed = NO;
+        }
+    }
+    
+    [super pushViewController:viewController animated:animated];
 }
-*/
+
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+    
+    
+    return [super popViewControllerAnimated:animated];
+}
+
+- (void)backBtnClick {
+    [self popViewControllerAnimated:YES];
+}
 
 @end

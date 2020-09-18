@@ -6,6 +6,7 @@
 //
 
 #import "YMHomeViewController.h"
+#import "YMTestViewController.h"
 
 @interface YMHomeViewController ()
 
@@ -15,17 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIButton *pushButton = [[UIButton alloc] init];
+    pushButton.backgroundColor = [UIColor blueColor];
+    pushButton.frame = CGRectMake(100, 100, 100, 100);
+    [pushButton addTarget:self action:@selector(pushButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:pushButton];
+    
 }
 
-/*
-#pragma mark - Navigation
+- (void)pushButtonClick {
+    YMTestViewController *testVc = [[YMTestViewController alloc] init];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:testVc animated:YES];
 }
-*/
+
 
 @end

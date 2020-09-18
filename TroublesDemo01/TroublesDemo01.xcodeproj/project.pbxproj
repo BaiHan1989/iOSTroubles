@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E1888E542514AF8F009D322F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1888E532514AF8F009D322F /* AppDelegate.m */; };
-		E1888E5D2514AF8F009D322F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1888E5B2514AF8F009D322F /* Main.storyboard */; };
 		E1888E5F2514AF8F009D322F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1888E5E2514AF8F009D322F /* Assets.xcassets */; };
 		E1888E622514AF8F009D322F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1888E602514AF8F009D322F /* LaunchScreen.storyboard */; };
 		E1888E652514AF8F009D322F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1888E642514AF8F009D322F /* main.m */; };
@@ -18,13 +17,13 @@
 		E1888E7C2514B61B009D322F /* YMCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1888E7B2514B61B009D322F /* YMCategoryViewController.m */; };
 		E1888E812514B631009D322F /* YMCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1888E802514B631009D322F /* YMCartViewController.m */; };
 		E1888E852514B63E009D322F /* YMProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1888E842514B63E009D322F /* YMProfileViewController.m */; };
+		E1888E892514BA0E009D322F /* YMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1888E882514BA0E009D322F /* YMTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E1888E4F2514AF8F009D322F /* TroublesDemo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TroublesDemo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1888E522514AF8F009D322F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1888E532514AF8F009D322F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E1888E5C2514AF8F009D322F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1888E5E2514AF8F009D322F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1888E612514AF8F009D322F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1888E632514AF8F009D322F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +40,8 @@
 		E1888E802514B631009D322F /* YMCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMCartViewController.m; sourceTree = "<group>"; };
 		E1888E832514B63E009D322F /* YMProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMProfileViewController.h; sourceTree = "<group>"; };
 		E1888E842514B63E009D322F /* YMProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMProfileViewController.m; sourceTree = "<group>"; };
+		E1888E872514BA0E009D322F /* YMTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMTestViewController.h; sourceTree = "<group>"; };
+		E1888E882514BA0E009D322F /* YMTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +88,8 @@
 				E1888E802514B631009D322F /* YMCartViewController.m */,
 				E1888E832514B63E009D322F /* YMProfileViewController.h */,
 				E1888E842514B63E009D322F /* YMProfileViewController.m */,
-				E1888E5B2514AF8F009D322F /* Main.storyboard */,
+				E1888E872514BA0E009D322F /* YMTestViewController.h */,
+				E1888E882514BA0E009D322F /* YMTestViewController.m */,
 				E1888E5E2514AF8F009D322F /* Assets.xcassets */,
 				E1888E602514AF8F009D322F /* LaunchScreen.storyboard */,
 				E1888E632514AF8F009D322F /* Info.plist */,
@@ -154,7 +156,6 @@
 			files = (
 				E1888E622514AF8F009D322F /* LaunchScreen.storyboard in Resources */,
 				E1888E5F2514AF8F009D322F /* Assets.xcassets in Resources */,
-				E1888E5D2514AF8F009D322F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +172,7 @@
 				E1888E702514B54E009D322F /* YMTabBarController.m in Sources */,
 				E1888E7C2514B61B009D322F /* YMCategoryViewController.m in Sources */,
 				E1888E542514AF8F009D322F /* AppDelegate.m in Sources */,
+				E1888E892514BA0E009D322F /* YMTestViewController.m in Sources */,
 				E1888E652514AF8F009D322F /* main.m in Sources */,
 				E1888E782514B60C009D322F /* YMHomeViewController.m in Sources */,
 			);
@@ -179,14 +181,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E1888E5B2514AF8F009D322F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1888E5C2514AF8F009D322F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E1888E602514AF8F009D322F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,7 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ym.TroublesDemo01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -342,7 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ym.TroublesDemo01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
