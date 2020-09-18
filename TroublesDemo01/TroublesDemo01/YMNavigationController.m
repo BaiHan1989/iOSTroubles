@@ -23,7 +23,7 @@
     if (self.childViewControllers.count > 0) {
         
         viewController.hidesBottomBarWhenPushed = YES;
-        // 解决push多个控制器后，popToRootViewController TabBar消失
+//         解决push多个控制器后，popToRootViewController TabBar消失
         if (self.childViewControllers.count > 1) {
             viewController.hidesBottomBarWhenPushed = NO;
         }
@@ -33,8 +33,6 @@
 }
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
-    
-    
     return [super popViewControllerAnimated:animated];
 }
 
